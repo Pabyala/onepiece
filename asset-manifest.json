@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/onepiece/static/css/main.0c7bf28b.css",
-    "main.js": "/onepiece/static/js/main.cf68444f.js",
+    "main.js": "/onepiece/static/js/main.0dc06a2e.js",
     "static/media/OP-Img1.jpg": "/onepiece/static/media/OP-Img1.c68db67d4cfa635d8eee.jpg",
     "static/media/east_blue_01.jpg": "/onepiece/static/media/east_blue_01.2302dc4fe0b21921f99b.jpg",
     "static/media/skypiea_05.png": "/onepiece/static/media/skypiea_05.348f98a2937871b4d69d.png",
@@ -758,10 +758,10 @@
     "static/media/clione.jpg": "/onepiece/static/media/clione.ce0238c0b967d0ca908c.jpg",
     "index.html": "/onepiece/index.html",
     "main.0c7bf28b.css.map": "/onepiece/static/css/main.0c7bf28b.css.map",
-    "main.cf68444f.js.map": "/onepiece/static/js/main.cf68444f.js.map"
+    "main.0dc06a2e.js.map": "/onepiece/static/js/main.0dc06a2e.js.map"
   },
   "entrypoints": [
     "static/css/main.0c7bf28b.css",
-    "static/js/main.cf68444f.js"
+    "static/js/main.0dc06a2e.js"
   ]
 }
