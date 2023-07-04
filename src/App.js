@@ -65,7 +65,7 @@ function App() {
         <Route path="/about/story/whole_cake_island"  element={<WholeCakeIsland/>} />
         <Route path="/about/story/levely"  element={<Levely/>} />
         <Route path="/about/story/land_of_wano"  element={<LandOfWano/>} />
-  
+        
       </Routes>
       <Footer/>
     </div>
