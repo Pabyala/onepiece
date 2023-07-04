@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { BrowserRouter  as Router, Route, Routes, BrowserRouter } from 'react-router-dom';
 import Home from "./routes/Home";
 import Quiz from "./routes/Quiz";
 import Story from "./routes/About/Story";
@@ -32,42 +32,44 @@ import Footer from './components/Footer';
 function App() {
   return (
     <div className="app">
-      <Routes>
-        {/* navbar */}
-        <Route path="/" element={<Home/>}/>
-        <Route path="/quiz" element={<Quiz/>}/>
+      <BrowserRouter>
+        <Routes>
+          {/* navbar */}
+          <Route path="/" element={<Home/>}/>
+          <Route path="/quiz" element={<Quiz/>}/>
 
-        {/* navbar about hover */}
-        <Route path="/about/story" element={<Story/>}/>
-        <Route path="/about/strawhat" element={<StrawHat/>}/>
-        <Route path="/about/organization" element={<Organization/>}/>
-        <Route path="/about/devilfruit" element={<DevilFruit/>}/>
-        <Route exact path="/about/birthday" element={<Birthday/>}/>
+          {/* navbar about hover */}
+          <Route path="/about/story" element={<Story/>}/>
+          <Route path="/about/strawhat" element={<StrawHat/>}/>
+          <Route path="/about/organization" element={<Organization/>}/>
+          <Route path="/about/devilfruit" element={<DevilFruit/>}/>
+          <Route exact path="/about/birthday" element={<Birthday/>}/>
 
-        <Route path="/character/:characterId"  element={<Character/>} />
+          <Route path="/character/:characterId"  element={<Character/>} />
 
-        {/* components for about */}
-        <Route path="/about/story/east_blue" element={<EastBlue/>}/>
-        <Route path="/about/story/alabasta"  element={<Alabasta/>} />
-        <Route path="/about/story/skypiea"  element={<Skypiea/>} />
-        <Route path="/about/story/davy_back_fight"  element={<DavyBackFigth/>} />
-        <Route path="/about/story/water_seven"  element={<WaterSeven/>} />
-        <Route path="/about/story/inies_lobby"  element={<IniesLobby/>} />
-        <Route path="/about/story/thriller_bark"  element={<ThrillerBark/>} />
-        <Route path="/about/story/sabaody_archipelago"  element={<SobaodyArchipelago/>} />
-        <Route path="/about/story/amazon_lily"  element={<AmazonLily/>} />
-        <Route path="/about/story/impel_down" element={<ImpelDown/>} />
-        <Route path="/about/story/marineford_war"  element={<MarinefordWar/>} />
-        <Route path="/about/story/fishman_island"  element={<FishmanIsland/>} />
-        <Route path="/about/story/punk_hazard"  element={<PunkHazard/>} />
-        <Route path="/about/story/dressrosa"  element={<Dressrosa/>} />
-        <Route path="/about/story/zou"  element={<Zou/>} />
-        <Route path="/about/story/whole_cake_island"  element={<WholeCakeIsland/>} />
-        <Route path="/about/story/levely"  element={<Levely/>} />
-        <Route path="/about/story/land_of_wano"  element={<LandOfWano/>} />
-        
-      </Routes>
-      <Footer/>
+          {/* components for about */}
+          <Route path="/about/story/east_blue" element={<EastBlue/>}/>
+          <Route path="/about/story/alabasta"  element={<Alabasta/>} />
+          <Route path="/about/story/skypiea"  element={<Skypiea/>} />
+          <Route path="/about/story/davy_back_fight"  element={<DavyBackFigth/>} />
+          <Route path="/about/story/water_seven"  element={<WaterSeven/>} />
+          <Route path="/about/story/inies_lobby"  element={<IniesLobby/>} />
+          <Route path="/about/story/thriller_bark"  element={<ThrillerBark/>} />
+          <Route path="/about/story/sabaody_archipelago"  element={<SobaodyArchipelago/>} />
+          <Route path="/about/story/amazon_lily"  element={<AmazonLily/>} />
+          <Route path="/about/story/impel_down" element={<ImpelDown/>} />
+          <Route path="/about/story/marineford_war"  element={<MarinefordWar/>} />
+          <Route path="/about/story/fishman_island"  element={<FishmanIsland/>} />
+          <Route path="/about/story/punk_hazard"  element={<PunkHazard/>} />
+          <Route path="/about/story/dressrosa"  element={<Dressrosa/>} />
+          <Route path="/about/story/zou"  element={<Zou/>} />
+          <Route path="/about/story/whole_cake_island"  element={<WholeCakeIsland/>} />
+          <Route path="/about/story/levely"  element={<Levely/>} />
+          <Route path="/about/story/land_of_wano"  element={<LandOfWano/>} />
+
+        </Routes>
+        <Footer/>
+      </BrowserRouter>
     </div>
 
   );
