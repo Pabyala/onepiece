@@ -1,0 +1,137 @@
+.birthday-list{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.btn-months-con{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 530px;
+    margin: 1.5rem auto 0 auto; 
+    padding: 1rem 0;
+    border-bottom: 2px solid #c4c4c4;
+    margin-bottom: 2rem;
+}
+.btnMonths{
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.iconLeftRight{
+    font-size: 30px;
+}
+.months-wrap{
+    width: 80%;
+    text-align: center;
+}
+.monthName{
+    font-size: 1.5rem;
+}
+
+
+.birthdayName-list-wrap{
+    list-style: none;
+    display: grid;
+    grid-gap: 11px;
+    grid-template-columns: repeat(auto-fit, minmax(280px, auto));
+}
+.birthday-info-con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 85px;
+    width: 100%;
+    list-style: none;
+    box-shadow: 0 0.1rem 0.3rem 0.2rem rgba(0,0,0, .15);
+}
+.birthDate-con{
+    width: 29%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #d73734;
+    color: #fff;
+}
+.birthDate{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+.birthMonth{
+    font-size: 1rem;
+}
+.birth-link{
+    width: 70%;
+    height: 100%;
+    border: 1px solid #c4c4c4;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    color: black;
+}
+.imgSmall-con{
+    border-right: 1px solid #c4c4c4;
+    width: 40%;
+    height: 100%;
+    width: 90px;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+}
+.imgSmall{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.3s ease-in-out;
+
+}
+.birth-link:hover .imgSmall-con{
+    border-right: 1px solid  black;
+}
+.birth-link:hover{
+    border: 1px solid black;
+}
+.birth-link:hover .imgSmall{
+    transform: scale(1.3);
+}
+.name-con{
+    margin-left: 8px;
+    max-width: 105px;
+}
+.birthName{
+    font-size: 1rem;
+}
+
+
+@media screen and (max-width: 787px){
+    .birthday-list {
+        padding: 0 2.8rem;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .birthday-list {
+        padding: 0 1.1rem;
+    }
+    .btn-months-con {
+        width: 100%;
+        padding: 1rem 0;
+        margin-bottom: 1rem;
+    }
+    .birthday-info-con {
+        height: 70px;
+        width: 100%;
+    }
+    .imgSmall-con {
+        width: 80px;
+    }
+}

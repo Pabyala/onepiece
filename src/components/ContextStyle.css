@@ -1,0 +1,173 @@
+.context{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 4rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.context .context-info{
+    padding-bottom: 1rem;
+}   
+.context-info  h1{
+    padding: 1rem 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.image{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    max-width: 55rem;
+    position: relative;
+    overflow: hidden;
+}
+.image img{
+    max-width: 100%;
+    height: auto;
+}
+.context-info, .fisrtDiv, 
+.secondDiv, .thirdDiv{
+    padding-top: 1rem;
+}
+ .fisrtDiv .image{
+    width: 60%;
+    height: 600px;
+    margin-bottom: 1rem;
+}
+ .fisrtDiv .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.paragraph{
+    line-height: 1.50;
+    font-size: 1.2rem;
+}
+.paragraph:not(:last-of-type){
+    margin-bottom: 20px;
+}
+.thirdDiv ul{
+    padding-left: 2rem;
+}
+.trivia li{
+    font-size: 1.2rem;
+    line-height: 1.50;
+}
+.thirdDiv .trivia li:nth-child(1){
+    margin-bottom: 20px;
+}
+
+.strawHat-container{
+    display: flex;
+    flex-direction: column;
+}
+.strawHat-context{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 4.5rem;
+}
+.strawHat-context:nth-child(2),
+.strawHat-context:nth-child(4){
+    flex-direction: row-reverse;
+}
+.strawHat-p{
+    width: 40%;
+}
+.strawHat-image{
+    width: 55%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.strawHat-image img{
+    width: 49%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+.strawHat-image img:nth-child(2){
+    position: absolute;
+    top: -10%;
+    right: 0;
+}
+
+
+@media screen and (min-width: 1025px) {
+    .context{
+        padding: 0 3rem;
+    }
+    .strawHat-context:nth-child(4) {
+        flex-direction: row-reverse;
+    }
+}
+
+@media screen and (max-width: 787px){
+    .context{
+        padding: 0 2.8rem;
+    }
+    .strawHat-context{
+        display: flex;
+        flex-direction: column-reverse;
+        padding-top: 3rem;
+    }
+    .strawHat-context:nth-child(2),
+    .strawHat-context:nth-child(2){
+        flex-direction: column-reverse;
+    }
+    .strawHat-p{
+        width: 100%;
+    }
+    .strawHat-image{
+        width: 100%;
+        margin: 1.8rem 0;
+    }
+    .strawHat-context:nth-child(4) {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .paragraph, .trivia li{
+        font-size: 1.1rem;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+    .hero{
+        height: 50vh;
+    }
+    .context{
+        padding: 0 1.1rem;
+    }
+    .context .context-info{
+        padding: 0;
+    }   
+    .context-info h1{
+        padding: .8rem 0;
+        font-size: 1.3rem;
+    }
+    .paragraph{
+        line-height: 1.40;
+        font-size: 1rem;
+    }
+    .paragraph:not(:last-of-type){
+        margin-bottom: 15px;
+    }
+    .thirdDiv ul{
+        padding-left: 1.1rem;
+    }
+    .trivia li{
+        font-size: 1rem;
+        line-height: 1.40;
+    }
+    .thirdDiv .trivia li:nth-child(1){
+        margin-bottom: 15px;
+    }
+    .strawHat-context{
+        padding-top: 1rem;
+    }
+    .strawHat-image img {
+        height: 220px;
+        border-radius: 3px;
+    }
+}

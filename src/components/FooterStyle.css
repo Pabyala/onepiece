@@ -1,0 +1,132 @@
+.footer{
+    background-color: #202125;
+    color: #fff;
+    margin: 3rem 0 0 0;
+    padding: 1.5rem 0;
+    width: 100%;
+}
+.site-links{
+    margin: 0 auto 1rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 800px;
+    max-width: 1400px;
+    padding: 0 3rem;
+}
+.footer-p{
+    font-size: 1.1rem;
+    line-height: 1.50;
+    font-weight: 500;
+    padding-bottom: .4rem;
+    letter-spacing: 1px;
+}
+.icon-sites{
+    display: flex;
+}
+.links-icon-fb,
+.links-icon-insta,
+.links-icon-twit,
+.links-icon-chrome{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    padding: 5px;
+    height: 40px;
+    background: #fff;
+    border-radius: 50%;
+    transition: .3s ease-in-out;
+}
+.links-icon-fb:hover,
+.links-icon-insta:hover,
+.links-icon-twit:hover,
+.links-icon-chrome:hover{
+    background-color: #BE2A29;
+}
+.links-icon-fb:hover .fb,
+.links-icon-insta:hover .insta,
+.links-icon-twit:hover .twit,
+.links-icon-chrome:hover .chrome{
+    color: #ffff;
+}
+
+.site-icons{
+    font-size: 1.5rem;
+    color: black;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    transition: .3s ease-in-out;
+}
+.links-icon:not(:nth-child(4n+1)) {
+    margin-left: .5rem;
+}
+
+.credits{
+    text-align: center;
+}
+.credits-p{
+    font-size: 1rem;
+}
+.toei-site,
+.me-links{
+    text-decoration: underline;
+    color: #ffff;
+    transition: .3s ease-in-out;
+}
+.toei-site:hover,
+.me-links:hover{
+    text-decoration: none;
+    color: red;
+}
+
+
+@media screen and (max-width: 787px){
+    .site-links{
+        flex-direction: column;
+        width: 100%;
+        padding: 0 2.8rem;
+    }
+    .design-link {
+        margin-bottom: 1rem;
+    }
+    .footer-p {
+        line-height: 1.40;
+        padding-bottom: 0.2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 480px){
+    .site-links{
+        width: 100%;
+        padding: 0 1.1rem;
+    }
+    .footer-p {
+        font-size: .9rem;
+        font-weight: 400;
+    }
+    .icon-sites {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+    }
+    .links-icon-fb, 
+    .links-icon-insta, 
+    .links-icon-twit, 
+    .links-icon-chrome {
+        width: 30px;
+        padding: 5px;
+        height: 30px;
+    }
+    .credits-p {
+        font-size: .9rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .credits-src{
+        margin-bottom: 8px;
+    }
+}

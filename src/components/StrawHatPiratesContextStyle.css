@@ -1,0 +1,293 @@
+.strawHatPirates,
+.organization{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.image-holder{
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    max-width: 55rem;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 2rem;
+}
+.imageFront{
+    max-width: 100%;
+    height: auto;
+}
+.strawHat-det{
+    padding-bottom: 2rem;
+}
+.strawHat-det-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.strawHat-det-list-item.first{
+    margin-right: 3rem;
+}
+.title-head{
+    font-weight: 700;
+    line-height: 1.50;
+    font-size: 1.1rem;
+}
+.title-body{
+    line-height: 1.50;
+    font-size: 1.1rem;
+}
+
+
+.el-paragraph{
+    margin-bottom: 3rem;
+}
+.p-tag{
+    line-height: 1.50;
+    font-size: 1.1rem;
+}
+
+
+/* for list */
+.el-card-list{
+    list-style: none;
+    display: grid;
+    grid-gap: 12px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, auto));
+}
+.el-card-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 0 0.1rem 0.3rem 0.2rem rgba(0,0,0, .15);
+}
+.el-list-card-con{
+    display: flex;
+    word-break: break-word;
+    padding-bottom: 5px;
+}
+.el-card-img-con{
+    width: 35%;
+}
+.el-card-img{
+    overflow: hidden;
+    height: 95px;
+    width: 100%;
+}
+.el-card-img:hover .smallImg{
+    transform: scale(1.3);
+}
+.smallImg{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+.el-card-text{
+    width: 65%;
+    word-wrap: break-word;
+    padding: 0 5px;
+    
+}
+.groupMemberName{
+    font-size: 15px;
+    font-weight: 600;
+}
+.card-title{
+    margin-right: 4px;
+    font-size: .9rem;
+    font-weight: 600;
+    color: #313131;
+}
+
+.card-subTitle{
+    font-size: .9rem;
+    font-weight: normal;
+}
+
+/* for button */
+.viewBtnCharact{
+    width: 100%;
+    background-color: #fff;
+    text-align: center;
+    font-size: .8rem;
+    text-decoration: none;
+    border: 1px solid black;
+    padding: 0.4rem 3rem;
+    border-radius: 2px;
+    display: inline-block;
+    color: black;
+    font-weight: 700;
+    transition: .3s all ease-in-out;
+}
+.viewBtnCharact:hover{
+    background-color: black;
+    color: #fff;
+}
+
+
+/* for dropdown menu */
+.dropdown{
+    width: 400px;
+    margin: 2rem auto;
+    position: relative;
+    user-select: none;
+}
+.dropdown-btn{
+    padding: 15px 20px;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgb(0,0,0,0.06);
+    font-weight: bold;
+    color: #333;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+.dropdown-content{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    padding: 15px;
+    background: #fff;
+    box-shadow: 3px 3px 10px 6px rgb(0,0,0,0.06);
+    font-weight: 500;
+    color: #333;
+    width: 100%;
+    height: 250px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+.dropdown-item{
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.dropdown-item:hover{
+    padding: 10px;
+    background: #f4f4f4;
+}
+.dropdownIcon{
+    font-size: 1.5rem;
+}
+.titleOrgGroup{
+    font-size: 1.3rem;
+    padding: 0.4rem 0;
+    text-align: center;
+}
+
+
+@media screen and (max-width: 787px){
+    .strawHatPirates,
+    .organization{
+        padding: 0 2.8rem;
+    }
+    .strawHat-det {
+        padding-bottom: 1.7rem;
+    }
+    .el-paragraph {
+        margin-bottom: 2rem;
+    }
+
+
+    /* for list */
+    .groupName {
+        padding: 3px 0;
+        font-size: 1.3rem;
+        margin-bottom: 0.5rem;
+    }
+    .groupMemberName {
+        font-size: 17px;
+    }
+    .card-subTitle {
+        font-size: .9rem;
+        font-weight: normal;
+    }
+    .el-card-list {
+        list-style: none;
+        display: grid;
+        grid-gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, auto));
+    }
+    .el-card-img-con {
+        width: 100%;
+    }
+    .el-card-text {
+        display: none;
+    }
+    .viewBtnCharact-con{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .viewBtnCharact {
+        padding: .1rem;
+        font-size: .9rem;
+    }
+
+}
+@media screen and (max-width: 480px){
+    .strawHatPirates,
+    .organization{
+        padding: 0 1.1rem;
+    }
+    .image-holder {
+        padding-bottom: 0;
+    }
+    .strawHat-det {
+        padding-bottom: 1rem;
+    }
+    .el-paragraph {
+        margin-bottom: 1rem;
+    }
+    .smallImg {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: 0.3s ease-in-out;
+    }
+    .title-head {
+        line-height: 1.40;
+        font-size: 1rem;
+    }
+    .title-body {
+        line-height: 1.40;
+        font-size: 1rem;
+    }
+    .p-tag {
+        line-height: 1.40;
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .groupName {
+        padding: 2px 0;
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+    .groupMemberName {
+        font-size: 13px;
+        padding: 3px 0;
+    }
+
+    /* for dropdown menu lis */
+    .dropdown {
+        width: 100%;
+        margin: 1.2rem auto;
+    }
+    .dropdown-btn {
+        padding: 10px 15px;
+        font-size: 1.1rem;
+    }
+    .titleOrgGroup{
+        font-size: 1.2rem;
+        padding: 0.4rem 0;
+    }
+}
+

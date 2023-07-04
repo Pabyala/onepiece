@@ -1,0 +1,129 @@
+.devilFruitContext{
+    font-family: 'Raleway', sans-serif;
+    padding: 0 4rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.devilFruitContext-con.devilFruit{
+    margin-top: 1rem;
+}
+.devilfruit-title{
+    padding: 1rem 0;
+    border-bottom: 1px solid #c4c4c4;
+}
+.devilfruit-card-text{
+    padding-bottom: 20px;
+}
+.devilfruit-subTitle{
+    padding: .9rem 0;
+    font-size: 1.3rem;
+}
+.devilfruit-p{
+    line-height: 1.50;
+    font-size: 1.1rem;
+}
+.devilfruit-p.classification{
+    padding: .4rem 0;
+}
+.devilfruit-p:not(:last-of-type) {
+    margin-bottom: 15px;
+}
+.devilfruit-card-img{
+    margin:  0 auto;
+    width: 60%;
+    padding-bottom: 10px;
+}
+.devilfruit-img{
+    width: 100%;
+    object-fit: cover;
+}
+
+
+.devilfruit-classification{
+    display: flex;
+    justify-content: space-between;
+}
+.classification-card-text{
+    width: 50%;
+}
+.classification-card-img{
+    width: 48%;
+    height: 280px;
+}
+.classification-img{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.devilfruit-classification:not(:last-of-type){
+    margin-bottom: 1.2rem;
+}
+.devilFruitContext-con.classification{
+    margin-bottom: 2rem;
+}
+
+
+@media screen and (max-width: 787px){
+    .devilFruitContext{
+        padding: 0 2.8rem;
+    }
+    .devilfruit-title {
+        padding: .9rem 0;
+        font-size: 1.8rem;
+    }
+    .devilfruit-subTitle {
+        padding: 0.8rem 0;
+        font-size: 1.3rem;
+    }
+    .devilfruit-p {
+        line-height: 1.50;
+        font-size: 1.1rem;
+    }
+    .devilfruit-card-img {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+    .devilfruit-classification {
+        display: flex;
+        flex-direction: column;
+    }
+    .classification-card-text {
+        width: 100%;
+    }
+    .classification-card-img {
+        width: 100%;
+        height: auto;
+    }
+    .devilfruit-classification:not(:last-of-type) {
+        margin-bottom: .7rem;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .devilFruitContext {
+        padding: 0 1.1rem;
+    }
+    .devilfruit-title {
+        padding: 0.8rem 0;
+        font-size: 1.3rem;
+    }
+    .devilfruit-subTitle {
+        padding: 0.4rem 0;
+        font-size: 1rem;
+    }
+    .devilfruit-p {
+        line-height: 1.40;
+        font-size: 1rem;
+    }
+    .devilfruit-p:not(:last-of-type) {
+        margin-bottom: 10px;
+    }
+    .devilfruit-card-text {
+        padding-bottom: 10px;
+    }
+    .devilfruit-subTitle {
+        padding: 0.4rem 0 0 0;
+        font-size: 1rem;
+    }
+}

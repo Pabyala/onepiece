@@ -1,0 +1,184 @@
+.character{
+    font-family: 'Raleway', sans-serif;
+    padding: 8rem 3rem 0 3rem;
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.character-name{
+    font-size: 1.6rem;
+    padding: .5rem 0;
+}
+.character-group,
+.character-position{
+    font-size: 1.3rem;
+    padding: .1rem 0;
+}
+.character-overview{
+    font-size: 1.3rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #c4c4c4;
+    margin-bottom: .8rem;
+}
+.v-actor{
+    margin-top: 1.2rem;
+    line-height: 1.50;
+    font-size: 1.1rem;
+}
+.character-title{
+    line-height: 1.50;
+    font-size: 1.1rem;
+    font-weight: 700;
+}
+.character-subTitle{
+    line-height: 1.50;
+    font-size: 1.1rem;
+}
+:root{
+    --width-wx: 1200px;
+    --width-pc: 960px;
+    --width-tb: 768px;
+    --width-sp: 480px;
+}
+.el-second-card{
+    max-width: 800px;
+    margin: 1.3rem auto;
+}
+.el-second-card-img{
+    max-height: 65rem;
+    max-width: 100%;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.character-img{
+    max-height: 65rem;
+    max-width: 100%;
+    width: auto;
+}
+.el-third-card{
+    margin-bottom: 3rem;
+}
+.el-list-character-data{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.character-dl{
+    width: 30%;
+    padding-right: 0;
+    display: table-row;
+}
+.character-dl:not(:nth-child(3n+1)) {
+    margin-left: 1rem;
+}
+
+.character-dl:nth-child(n+4) {
+    margin-top: 1rem;
+}
+
+
+.character-dt{
+    width: 9.3rem;
+    display: table-cell;
+}
+.character-dd{
+    width: auto;
+    display: table-cell;
+}
+
+.groupName{
+    padding: .8rem 0;
+}
+
+
+
+@media screen and (max-width: 787px){
+    .character {
+        padding: 6rem 2.8rem 0 2.8rem;
+    }
+    .character-name {
+        font-size: 1.6rem;
+        padding: 0.4rem 0;
+    }
+    .character-group, .character-position {
+        font-size: 1.3rem;
+        padding: 0.1rem 0;
+    }
+    .v-actor {
+        margin-top: 1.1rem;
+    }
+    .character-overview {
+        font-size: 1.3rem;
+        padding: 1rem 0;
+        border-bottom: 1px solid #c4c4c4;
+        margin-bottom: .2rem;
+    }
+    .el-list-character-data {
+        display: flex;
+        flex-direction: column;
+    }
+    .character-dl {
+        width: 100%;
+        padding: .8rem 0;
+    }
+    .character-dl:not(:nth-child(3n+1)) {
+        margin-left: 0;
+    }
+    .character-dl:nth-child(n+4) {
+        margin-top: 0;
+    }
+    .el-third-card {
+        margin-bottom: 2rem;
+    }
+}
+
+
+
+@media screen and (max-width: 480px){
+    .character {
+        padding: 5rem 1.1rem 0 1.1rem;
+    }
+    .character-name {
+        font-size: 1.4rem;
+        padding: 0.2rem 0;
+    }
+    .character-group{
+        font-size: 1.1rem;
+    }
+    .character-position{
+        font-size: 1rem;
+    }
+    .v-actor {
+        margin-top: 1rem;
+        line-height: 1.40;
+        font-size: 1rem;
+    }
+    .el-second-card {
+        margin: .8rem auto;
+    }
+    .character-overview {
+        font-size: 1.1rem;
+        padding: .7rem 0;
+        margin-bottom: 0.1rem;
+    }
+    .character-dl {
+        width: 100%;
+        padding: 0.5rem 0;
+    }
+    .character-title {
+        line-height: 1.40;
+        font-size: 1rem;
+    }
+    .character-subTitle {
+        line-height: 1.40;
+        font-size: 1rem;
+    }
+    .el-third-card {
+        margin-bottom: 1rem;
+    }
+    .groupName {
+        padding: 0.5rem 0;
+    }
+}
