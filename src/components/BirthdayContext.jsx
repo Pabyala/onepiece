@@ -15,7 +15,7 @@ const renderMembersByMonth = (month) => {
 
   PiratesData.forEach(({ member }) => {
     member.forEach(({ name, birthday, small_image, url }) => {
-      const [birthMonth, birthDate] = birthday.split(" ");
+      const [birthMonth] = birthday.split(" ");
       if (birthMonth === month) {
         members.push({ birthday, small_image, name, url });
       }
