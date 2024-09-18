@@ -5,7 +5,7 @@ import { MdError } from "react-icons/md"
 function QuizContext() {
     const [startNow, setStartNow] = useState(true)
     const [quizStart, setQuizStart] = useState({ isStart: false })
-    const [questions, setQuestions] = useState(QuestionData)
+    const questions = QuestionData;
     const [currentQuestion, setCurrentQuestion] = useState(0)
     const [showFinalResult, setShowFinalResult] = useState(false)
     const[score, setScore] = useState(0)
@@ -15,7 +15,6 @@ function QuizContext() {
     const [errorBox, setErrorBox] = useState(false)
     const [correctAnsText, setCorrectAnsText] = useState('')
     const [inCorrectAnsText, setInCorrectAnsText] = useState('')
-
 
     function quizStartBtn(){
       if(inputValueName === ""){
