@@ -1,9 +1,9 @@
 .quizContext{
-    height: 60vh;
+    height: auto;
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
+    margin: 2rem 0 0 0;
 }
 .quizContext-con{
     padding: 0 2.8rem;
@@ -305,7 +305,8 @@ button{
 
 @media screen and (max-width: 787px){
     .quizContext {
-        height: 50vh;
+        height: auto;
+        margin: 2rem 0 0 0;
     }
 
     /* for star quiz */
@@ -355,7 +356,7 @@ button{
 @media screen and (max-width: 480px){
     .quizContext {
         height: auto;
-        margin: 2rem 0;
+        margin: 2rem 0 0 0;
     }
 
     /* for welcome quiz */
